@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- aoslink -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome cdnj link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts link -->
+    <!-- inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Michroma&display=swap"
+        rel="stylesheet">
+    <!-- michroma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Michroma&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.google.com/share?selection.family=Halant:wght@300;400;500;600;700|Inter:wght@100..900|Kaisei+Decol|Major+Mono+Display|Manjari:wght@100;400;700|Manrope:wght@200..800|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900">
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css link-->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="body">
+    <!-- header -->
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+        <div class="container">
+            <div class="navlogo"></div>
+            <button class="navbar-toggler navtooglehamb" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navtoogle"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navcontsli">
+                    <li class="nav-item">
+                        <a class="nav-link active navlink1" aria-current="page" href="#">Home</a>
+
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink2" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navlink2" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Collection
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Kids</a></li>
+                            <li><a class="dropdown-item" href="#">Men</a></li>
+                            <li><a class="dropdown-item" href="#">Women</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink2" href="#" tabindex="-1" aria-disabled="true">Shoes</a>
+                    </li>
+                </ul>
+                <form class="d-flex navsearch navcontsli">
+                    <input class="form-control me-2 navinp1" type="search" placeholder="Search Here"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success navbut" type="submit">Search</button>
+                </form>
+                <div class="navcartcont">
+                    <a href=""> <i class="fa-solid fa-heart  cart"></i></a>
+                    <a href=""> <i class="fa-solid fa-cart-shopping cart1"></i></a>
+                    <a href=""><i class="fa-solid fa-user cart3"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navend -->
+
+    <!-- bansec -->
+    <section>
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators indigrp1">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active indi1" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2" class="indi2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3" class="indi3"></button>
+            </div>
+            <div class="carousel-inner  bg-transparent">
+
+                <div class="carousel-item active bannersec1">
+
+                    <div class="banner1cont">
+                        <div class="bannerhcontani">
+                            <h3 class="bannersec1h31">ew Arrivals
+                                Big sale
+                            </h3>
+                            <div class="bannerseprisecont">
+                                <h3 class="bannersepriseconth31">Upto</h3>
+                                <h3 class="bannersepriseconth32">50%</h3>
+                                <h3 class="bannersepriseconth31">off</h3>
+                            </div>
+                        </div>
+
+                        <button class="bannersecbutton1">Shop Now</button>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item bannersec2">
+                    <div class="banner1cont">
+                        <div class="bannerhcontani">
+                            <h3 class="bannersec1h31">ew Arrivals
+                                Big sale
+                            </h3>
+                            <div class="bannerseprisecont">
+                                <h3 class="bannersepriseconth31">Upto</h3>
+                                <h3 class="bannersepriseconth32">50%</h3>
+                                <h3 class="bannersepriseconth31">off</h3>
+                            </div>
+                        </div>
+
+                        <a href=""><button class="bannersecbutton1">Shop Now</button></a>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item bannersec3">
+
+
+                    <div class="banner1cont">
+                        <div class="bannerhcontani">
+                            <h3 class="bannersec1h31">ew Arrivals
+                                Big sale
+                            </h3>
+                            <div class="bannerseprisecont">
+                                <h3 class="bannersepriseconth31">Upto</h3>
+                                <h3 class="bannersepriseconth32">50%</h3>
+                                <h3 class="bannersepriseconth31">off</h3>
+                            </div>
+                        </div>
+
+                        <button class="bannersecbutton1">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bansec end -->
+    <!-- sec1 -->
+    <section class="sec1">
+        <div class="sec1cnt container">
+            <h3 class="sec1h31 lightanimate"> NEW & FEATURED</h3>
+            <div>
+                <div class="sec1dvcnt1">
+                    <div class=" sec1dv1">
+                        <div class="sec1img" data-aos="fade-up"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike Air Max</h3>
+                            <h3 class="sec1h33">$ 150</h3>
+                        </div>
+                    </div>
+                    <div class="sec1dv2">
+                        <div class="sec1img2" data-aos="fade-down"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike Air Pro</h3>
+                            <h3 class="sec1h33">$ 115</h3>
+                        </div>
+                    </div>
+                    <div class="sec1dv2">
+                        <div class="sec1img3" data-aos="fade-up"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike Air Jordan</h3>
+                            <h3 class="sec1h33">$ 215</h3>
+                        </div>
+                    </div>
+                    <div class="sec1dv2">
+                        <div class="sec1img4" data-aos="fade-down"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike Air Jordan1</h3>
+                            <h3 class="sec1h33">$ 205</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="sec1dvcnt2">
+                    <div class="sec1dv1">
+                        <div class="sec1img5" data-aos="fade-down"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike Flyknit</h3>
+                            <h3 class="sec1h33">$ 85</h3>
+                        </div>
+                    </div>
+                    <div class="sec1dv2">
+                        <div class="sec1img6" data-aos="fade-up"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike Martin Rose</h3>
+                            <h3 class="sec1h33">$ 90</h3>
+                        </div>
+                    </div>
+                    <div class="sec1dv2">
+                        <div class="sec1img7" data-aos="fade-down"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike SB</h3>
+                            <h3 class="sec1h33">$ 115</h3>
+                        </div>
+                    </div>
+                    <div class="sec1dv2">
+                        <div class="sec1img8" data-aos="fade-up"></div>
+                        <div class="sec1h3cnt">
+                            <h3 class="sec1h32">Nike Air Jordan1</h3>
+                            <h3 class="sec1h33">$ 220</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sec1end -->
+    <!-- sec2 -->
+    <section>
+        <div class="container">
+            <h3 class="sec1h31 lightanimate">Discover shoes</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swpimg1">
+                        <a href="" class="sec2lnk"><div class="sec2dv1">Shop Now</div></a>
+                    </div>
+                    <div class="swiper-slide swpimg2">
+                      <a href=""  class="sec2lnk">  <div class="sec2dv1">Shop Now</div></a>
+                    </div>
+                    <div class="swiper-slide swpimg3">
+                       <a href=""  class="sec2lnk"> <div class="sec2dv1">Shop Now</div></a>
+                    </div>
+                    <div class="swiper-slide swpimg4">
+                       <a href=""  class="sec2lnk"> <div class="sec2dv1">Shop Now</div></a>
+                    </div>
+                    <div class="swiper-slide swpimg5">
+                       <a href=""  class="sec2lnk"> <div class="sec2dv1">Shop Now</div></a>
+                    </div>
+                    <div class="swiper-slide swpimg6">
+                       <a href=""  class="sec2lnk"> <div class="sec2dv1">Shop Now</div></a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sec2 end -->
+
+    <!-- sec3 -->
+    <section class="sec3">
+
+        <div class="sec3cnt">
+            <div class="sec3imgdv"></div>
+            <div class="sec3h3cnt">
+                <h3 class="sec3h31 ">We Provide <br>
+                    Best Shoe</h3>
+                <p class="sec3h32">It is a long established fact that a reader <br> will be distracted by the readable
+                    content <br> of a page
+                    when looking at its layout.br The <br> point of using Lorem Ipsum</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- sec3end -->
+
+    <!-- sec4 -->
+    <section class="sec4">
+        <div class="sec4cnt container-fluid">
+            <div class="sec4subcnt">
+                <h3 class="sec4h31">The Season begins</h3>
+                <h3 class="sec4h32">Promotion Sales Up to 50% Off</h3>
+                <div class="sec4h31cnt">
+                    <h3 class="sec4h3hrs">08 <br>hours</h3>
+                    <h3 class="sec4hminutes">30 <br>minutes</h3>
+                    <h3 class="sec4hminutes">15 <br>seconds</h3>
+                </div>
+
+                <a href="" class="sec4lnk"><div class="sec4div1 lightanimate">Shop Now</div></a>
+            </div>
+        </div>
+    </section>
+    <!-- sec4end -->
+    <!-- sec5 -->
+    <section class="sec5">
+        <div class="container-fluid">
+            <h3 class="sec5heading lightanimate">UP COMING FEATURED</h3>
+            <div class="se5cnt">
+                <div class="sec5dv1">
+                    <div class="sec5imgdv1" data-aos="zoom-in-up"></div>
+                    <h3 class="sec5h31">DEC 20</h3>
+                </div>
+                <div class="sec5dv2">
+                    <div class="sec5imgdv2" data-aos="zoom-in-down"></div>
+                    <h3 class="sec5h31">DEC 20</h3>
+                </div>
+                <div class="sec5dv2">
+                    <div class="sec5imgdv3" data-aos="zoom-in-up"></div>
+                    <h3 class="sec5h31">DEC 20</h3>
+                </div>
+                <div class="sec5dv2">
+                    <div class="sec5imgdv4" data-aos="zoom-in-down"></div>
+                    <h3 class="sec5h31">DEC 20</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="ftrcnt">
+
+                <ul class="ftrmndv1">
+                    <div class="ftrlogo"></div>
+                    <li><a href="" class="ftrmnh3">Company</a></li>
+                    <li class="ftrlnk1"><a href="" class="ftrh31">About Us</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Our Service</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Privacy Policy</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Affictate Program</a></li>
+                </ul>
+
+                <ul class="ftrmndv2">
+                    <li><a href="" class="ftrmnh3">Get Help</a></li>
+                    <li class="ftrlnk1"><a href="" class="ftrh31">Faq</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">shipping</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">shipping</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Returns</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Order Status</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Payment Option</a></li>
+                </ul>
+
+                <ul class="ftrmndv3">
+                    <li><a href="" class="ftrmnh3">About Nike</a></li>
+                    <li class="ftrlnk1"><a href="" class="ftrh31">News</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Carrers</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Investors</a></li>
+                    <li class="ftrlnk2"><a href="" class="ftrh32">Sustainability</a></li>
+                </ul>
+
+
+                <div class="ftrmndviclass">
+                    <div class="ftriccnt"><a href=""> <i class="fa-solid fa-envelope ftricls"></i></a>
+                        <input type="text" placeholder="Enter your email" class="ftrinp">
+                        <a href=""> <i class="fa-solid fa-paper-plane ftricls2"></i></a>
+                    </div>
+
+                    <div class="ftriccnt2">
+                        <a href=""> <i class="fa-brands fa-instagram ftricls"></i></a>
+                        <a href=""> <i class="fa-brands fa-twitter ftricls2"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f ftricls2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <h3 class="rahul"> rahul.goswami010395@gmail.com</h3>
+        </div>
+    </footer>
+
+
+
+    <!-- aoslink -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- js linkend -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap bundle link -->
+</body>
+
+</html>
